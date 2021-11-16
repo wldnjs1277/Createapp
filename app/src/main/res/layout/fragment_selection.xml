@@ -11,39 +11,61 @@
         android:layout_height="0dp"
         android:orientation="vertical"
         android:weightSum="4"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
         app:layout_constraintBottom_toTopOf="@+id/guideline2"
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/option1"
+            android:text="@string/text_1"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/selection"/>
 
         <TextView
             android:id="@+id/option2"
+            android:text="@string/text_2"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/selection"/>
 
         <TextView
             android:id="@+id/option3"
+            android:text="@string/text_3"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/selection"/>
 
         <TextView
             android:id="@+id/option4"
+            android:text="@string/text_4"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
+            android:layout_marginBottom="10dp"
             android:background="@drawable/selection"/>
 
 
     </LinearLayout>
+    <ImageView
+        android:src="@drawable/previous"
+        app:layout_constraintTop_toBottomOf="@id/guideline2"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/btn_back"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

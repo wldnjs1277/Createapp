@@ -2,4 +2,9 @@
     <string name="app_name">LoveTest</string>
     <string name="main_title">Let\'s find out\n your love type!</string>
     <string name="question_title">There were favorite flowers\n in the flower base.\n As time goes,the flowers\n have all withered.\n What are you going to do with that?</string>
+    <string name="text_1">"1. Throw it away."</string>
+    <string name="text_2">2. Water the flowers.</string>
+    <string name="text_3">3. Cut it off with sissors.</string>
+    <string name="text_4">4. Make them as dried flower.</string>
+
 </resources>
