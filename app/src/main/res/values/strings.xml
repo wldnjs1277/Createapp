@@ -6,5 +6,8 @@
     <string name="text_2">2. Water the flowers.</string>
     <string name="text_3">3. Cut it off with sissors.</string>
     <string name="text_4">4. Make them as dried flower.</string>
+    <string name="result_1">You are a quitter!"</string>
+    <string name="result_2">"May be you give up on
+love too easily.."</string>
 
 </resources>
