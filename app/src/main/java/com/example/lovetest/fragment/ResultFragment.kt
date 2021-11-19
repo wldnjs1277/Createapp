@@ -53,7 +53,10 @@ class ResultFragment : Fragment() {
 
         navController=Navigation.findNavController(view)
 
-        setResult(option){}
+        setResult(option)
+        btn_home.setOnClickListener{
+            navController.navigate(R.id.action_resultFragment_to_mainFragment)
+        }
     }
     @SuppressLint("SetTextI18n")
     fun setResult(option:Int){
