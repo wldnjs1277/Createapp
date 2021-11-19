@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
 import com.example.lovetest.R
@@ -48,10 +49,10 @@ class SelectionFragment : Fragment() ,View.OnClickListener{
         navController = Navigation.findNavController(view)
 
         btn_back.setOnClickListener(this)
-        //option1.setOnContextClickListener(this)
-        //option2.setOnContextClickListener(this)
-        //option3.setOnContextClickListener(this)
-        //option4.setOnContextClickListener(this)
+        option1.setOnClickListener(this)
+        option2.setOnClickListener(this)
+        option3.setOnClickListener(this)
+        option4.setOnClickListener(this)
     }
 
     override fun onClick(p0: View?) {
@@ -59,12 +60,16 @@ class SelectionFragment : Fragment() ,View.OnClickListener{
             R.id.btn_back -> {
                 navController.popBackStack()
             }
-            R.id.option1 -> {}
-            R.id.option2 -> {}
-            R.id.option3 -> {}
-            R.id.option4 -> {}
+            R.id.option1 -> {navigationwithindex(1)}
+            R.id.option2 -> {navigationwithindex(2)}
+            R.id.option3 -> {navigationwithindex(3)}
+            R.id.option4 -> {navigationwithindex(4)}
 
         }
+    }
+    fun navigationwithindex(index:Int){
+        var bundle = bundleOf("index" to index)
+        navController.navigate(R.id.action_selectionFragment_to_resultFragment,bundle)
     }
 
 
