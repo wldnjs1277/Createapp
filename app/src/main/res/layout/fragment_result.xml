@@ -8,7 +8,7 @@
     tools:context=".fragment.ResultFragment">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/result_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
@@ -21,7 +21,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/imageView"
+        android:id="@+id/result_sub"
         android:layout_width="260dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="268dp"
@@ -31,7 +31,7 @@
         app:layout_constraintBottom_toTopOf="@+id/imageView2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/result_main"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
